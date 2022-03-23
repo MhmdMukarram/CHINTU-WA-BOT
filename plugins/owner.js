@@ -1,39 +1,28 @@
-const Julie = require('../events');
-const {MessageType} = require('@adiwajshing/baileys');
-const Config = require('../config');
+const Asena = require('../events');
+const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
+const axios = require('axios');
 
-if (Config.WORKTYPE == 'private') {
+const Language = require('../language');
+const Lang = Language.getString('wallpaper');
 
-    Julie.addCommand({pattern: 'owner', fromMe: true, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+Asena.addCommand({pattern: 'owner', fromMe: false, desc: "Gives github link of the bot"}, (async (message, match) => {
 
-        if (message.jid === '15369524516-1612300121@g.us') {
+    var skl = await axios.get("https://i.ibb.co/GsjY7fC/Whats-Alexa.png", { responseType: 'arraybuffer' })
 
-            return;
-        }
+    await message.sendMessage(Buffer(skl.data), MessageType.image, {mimetype: Mimetype.png, caption: `*ʀᴇᴅ ᴀʟᴘʜᴀ ɪꜱ ᴛʜᴇ ᴄʜɪɴᴛᴜ ʙᴏᴛ ᴏᴡɴᴇʀ *
 
-        if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Red_Alpha Created By Mhmd Mukarram*' , MessageType.text);
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.OWNER + '\n\n---------------------', MessageType.text);
-        }
-    }));
-}
+*Cʀᴇᴀᴛᴇʀ number : wa.me/94740979220?text=Hi%20Red_Alpha%20bro.%20*
 
-else if (Config.WORKTYPE == 'public') {
 
-    Julie.addCommand({pattern: 'owner', fromMe: false, desc: 'shows the detail of bot owner'}, (async (message, match) => {
+ *𝚁𝙴𝙳 𝙰𝙻𝙿𝙷𝙰 𝚆𝙰 chat group 1 : https://chat.whatsapp.com/Jx7f5x3wSU7D8a9ntdFB3j*
+     
+ *𝚁𝙴𝙳 𝙰𝙻𝙿𝙷𝙰 𝚆𝙰 chat group 2 : https://chat.whatsapp.com/E9ISyKEuxKz2pCP5Qz8igM*
 
-        if (message.jid === '54218542512-1612300121@g.us') {
+ *𝚁𝙴𝙳 𝙰𝙻𝙿𝙷𝙰 𝚆𝙰 chat group 3 : https://chat.whatsapp.com/KS9MRCiMF9pFri4aLfLyVE*
 
-            return;
-        }
+ *Gɪᴛ Lɪɴᴋ : https://github.com/MhmdMukarram/CHINTU-BOT*
 
-        if (Config.OWNER == 'default') {
-            await message.client.sendMessage(message.jid,'*Red_Alpha Created By Mhmd Mukarram*' , MessageType.text);
-        }
-        else {
-            await message.client.sendMessage(message.jid,Config.OWNER + '\n\n--------------------', MessageType.text);
-        }
-    }));
-}
+ *𝙲𝙷𝙸𝙽𝚃𝚄 © ༒︎𝚁𝙴𝙳 𝙰𝙻𝙿𝙷𝙰༒︎*
+`}) 
+
+}));
