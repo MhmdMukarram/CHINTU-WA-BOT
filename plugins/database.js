@@ -19,14 +19,14 @@ var plk_here = new Date().toLocaleDateString(get_localized_date)
 var afnplk = '```⏱ Time :' + plk_say + '```\n\n ```📅 Date :' + plk_here + '```'
 	const buttons = [
 
-        {buttonId: 'id1', buttonText: {displayText: 'OWN\n\n*RedAlpha Bot Have two types of alive message*\n\n*Hi i am live {pp}*\n\n*Hi i am alive {qt}*\n\n*welcome message addedd simple way*\n\n*.welcome {pp} {gphead} {gpmaker} {gpdesc}{owner}*\n\n*Another way*\n*.welcome {gif} {gphead} {gpmaker} {gpdesc} {time} {owner}*\n\n*Broadcast adedd replay with any message .bc*\n\n*Alive message time set*\n\n*Button message added .bot and .help*\n\n*All type of downloading command example .yt, .video, .song, .get*\n\n '}, type: 1},
-        {buttonId: 'id2', buttonText: {displayText: 'GIT\n\n```WhatsApp Group Link: https://chat.whatsapp.com/Jx7f5x3wSU7D8a9ntdFB3j```\n\n```Github link: https://github.com/MhmdMukarram1/RED_ALPHA```\n\n```For YT_PASSWORD: https://wa.me/message/5CCUQ6RG7BKBN1 (message to owner and ask the password)```\n\n```For making photo to link - https://t.me/HK_telegraph_BOT```\n'  }, type: 1},
+        {buttonId: 'id1', buttonText: {displayText: 'OWN\n\n*Chintu Bot Have two types of alive message*\n\n*Hi i am live {pp}*\n\n*Hi i am alive {qt}*\n\n*welcome message addedd simple way*\n\n*.welcome {pp} {gphead} {gpmaker} {gpdesc}{owner}*\n\n*Another way*\n*.welcome {gif} {gphead} {gpmaker} {gpdesc} {time} {owner}*\n\n*Broadcast adedd replay with any message .bc*\n\n*Alive message time set*\n\n*Button message added .bot and .help*\n\n*All type of downloading command example .yt, .video, .song, .get*\n\n '}, type: 1},
+        {buttonId: 'id2', buttonText: {displayText: 'GIT\n\n```WhatsApp Group Link: https://chat.whatsapp.com/Jx7f5x3wSU7D8a9ntdFB3j```\n\n```Github link: https://github.com/MhmdMukarram/CHINTU-WA-BOT```\n\n```For YT_PASSWORD: https://wa.me/94740979220 (message to owner and ask the password)```\n\n```For making photo to link - https://t.me/HK_telegraph_BOT```\n'  }, type: 1},
 
       ]
       
       const buttonMessage = {
           contentText: ' ʜʏ ᴅᴜᴅᴇ....👋🏻\n\n```BOT NAME:``` *'+Config.BOT+'*\n\n🃏 ᴛɪᴍᴇ   : ```' + plk_say + '```\n🍒 ᴅᴀᴛᴇ : ```' + plk_here + '```\n\n🃏 ᴄʟɪᴄᴋ ᴍᴇɴᴜ ᴀɴᴅ ᴇɴᴊᴏʏ ᴛʜᴇ ʙᴏᴛ\n',
-          footerText: '© Red Alpha',
+          footerText: '© ༒︎𝚁𝙴𝙳 𝙰𝙻𝙿𝙷𝙰༒︎',
           buttons: buttons,
           headerType: 1
       }
